@@ -13,9 +13,6 @@
   body {
     font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
     color: #333;
-    background-image: url(../images/pic.png);
-    background-position: left bottom;
-    background-repeat: no-repeat;
   }
 
   /* 去除超链接下划线，设置超链接字体颜色 */
