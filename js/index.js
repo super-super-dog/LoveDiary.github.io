@@ -1,4 +1,4 @@
-function fn() {
+function fun() {
   for (let i = 0; i < pic_img.length; i++) {
     let random = Math.floor(Math.random() * 665)
     pic_img[i].src = `./uploads/pic_square/线条小狗头像 (${random}).jpg`
@@ -6,7 +6,7 @@ function fn() {
 }
 const pic_img = document.querySelectorAll('.pic li img')
 const btn = document.querySelector('.pic_title button')
-btn.addEventListener('click', fn)
+btn.addEventListener('click', fun)
 
 // 制作轮播图效果
 /* 1.图片移动：transform:tranlateY(-1152px)
