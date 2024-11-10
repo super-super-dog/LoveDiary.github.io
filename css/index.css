@@ -103,7 +103,7 @@
 /* banner */
 .banner .wrapper {
   justify-self: center;
-  margin-top: 80px;
+  margin-top: 90px;
   width: 1152px;
   height: 400px;
   position: relative;
@@ -111,11 +111,15 @@
 }
 
 /* banner img */
-.banner img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.banner .banner_pic {
+  display: flex;
+  width: 1152px;
+  height: 400px;
+  transition: all 1s;
+}
+
+.banner .banner_pic img {
+  transform: translateY(-45%);
 }
 
 .banner .prev,
@@ -320,14 +324,32 @@
 
 /* pic */
 .pic_title {
-  margin: 18px 0;
+  position: relative;
+  margin: 18px auto;
   height: 80px;
+}
+
+.pic_title p {
+  width: 100%;
   font: 700 32px normal;
   color: #5C5C5C;
-  ;
   line-height: 80px;
   text-align: center;
   letter-spacing: 30px;
+}
+
+.pic_title button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 30px;
+  color: #FFFFFF;
+  border-radius: 15px;
+  background: #8f4f69;
+  border: 1px solid #B1768E;
+  cursor: pointer;
 }
 
 .pic {
