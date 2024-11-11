@@ -67,3 +67,19 @@ banner.addEventListener('mouseenter', function () {
   clearInterval(NameID)
 })
 banner.addEventListener('mouseleave', fn)
+
+//左侧diary_column栏切换
+const columnText = document.querySelectorAll('.content .diary_column .txt ul')
+console.log(columnText)
+const columnTitle = document.querySelectorAll('.content .diary_column .title li')
+console.log(columnTitle)
+let x = 0
+for (let i = 0; i < columnTitle.length; i++) {
+  columnTitle[i].addEventListener('click', function () {
+    columnTitle[x].className = ''
+    columnText[x].className = 'text'
+    columnTitle[i].className = 'active'
+    columnText[i].className = 'text active'
+    x = i
+  })
+}
