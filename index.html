@@ -7,11 +7,12 @@
   <meta name="description" content="">
   <meta name="description" content="">
   <title>LoveDiary</title>
-  <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/星星宇宙（圆形）.ico" type="image/x-icon">
   <link rel="stylesheet" href="./iconfont/iconfont.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./calender.css">
 </head>
 
 <body>
@@ -66,17 +67,58 @@
       </ul>
     </div>
   </div>
+  <div class="calender wrapper">
+    <div class="myblock">
+      <div class="myself">
+        <div class="user">
+          <img src="./images/user.jpg" alt="" width="100">
+        </div>
+        <p>白日幻想家</p>
+      </div>
+      <div class="date">
+        <ul>
+          <li>Today</li>
+          <li></li>
+        </ul>
+        <div class="sign">
+          <p>个性签名：</p>
+          <p>从此刻开始的未来，我绝不会轻言放弃。</p>
+        </div>
+      </div>
+      <div class="sentence">
+        <div>
+          <p>The greatest risk is not taking one.</p>
+          <p>最大的风险是不冒风险。</p>
+        </div>
+      </div>
+    </div>
+    <div class="mytime">
+      <h2>距考研还有：</h2>
+      <ul class="time">
+        <li>38</li>
+        <li>13</li>:
+        <li>45</li>:
+        <li>45</li>
+      </ul>
+      <ul class="unit">
+        <li>天</li>
+        <li>时</li>:
+        <li>分</li>:
+        <li>秒</li>
+      </ul>
+    </div>
+  </div>
   <div class="content">
     <div class="wrapper">
       <!-- diary_column -->
       <div class="diary_column">
         <ul class="title">
-          <li class="active">全部</li>
-          <li>特辑</li>
-          <li>日常</li>
+          <li class="active" data-id="0">全部</li>
+          <li data-id="1">特辑</li>
+          <li data-id="2">日常</li>
         </ul>
         <div class="txt">
-          <ul class="text active">
+          <ul class="text active ">
             <li><a href="#">【偶尔的日记·九十九步】</a></li>
             <li><a href="#">【偶尔的日记·从此刻开始的未来】</a></li>
             <li><a href="#">偶尔的日记（十二）</a></li>
