@@ -126,7 +126,6 @@
   }
   const timelist = document.querySelectorAll('.calender .mytime ul li')
   mytime()
-  console.log(timelist)
   setInterval(mytime, 1000)
 })();
 
