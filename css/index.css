@@ -1,104 +1,145 @@
-/* 公共版式 */
-.wrapper {
+.calender {
+  display: flex;
+  margin-top: 16px;
+  width: 1152px;
+  height: 280px;
+}
+
+.calender .myblock {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.calender .myblock .myself {
+  margin-right: 16px;
+  width: 180px;
+  height: 180px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .myblock .myself .user {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .myblock .myself p {
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  color: #5d5d5d;
+  line-height: 20px;
+}
+
+.calender .myblock .date {
+  padding: 20px;
+  width: 524px;
+  height: 180px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .myblock .date ul {
+  display: flex;
+  height: 40px;
+  color: #B1768E;
+  font: 700 20px/20px normal;
+}
+
+.calender .myblock .date ul li:first-child {
+  margin-right: 84px;
+}
+
+.calender .myblock .date .sign {
+  font: 400 20px/36px normal;
+}
+
+.calender .myblock .date .sign p:first-child {
+  font-weight: 700;
+}
+
+.calender .myblock .date .sign p:nth-child(2) {
+  text-indent: 2em;
+}
+
+.calender .myblock .sentence {
+  display: flex;
+  margin-top: 16px;
+  padding: 4px 12px;
+  font-size: 16px;
+  line-height: 30px;
+  width: 720px;
+  height: 84px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .myblock .sentence div {
+  align-content: center;
+}
+
+.calender .mytime {
+  margin-left: 16px;
+  width: 416px;
+  height: 280px;
+  background: #fff;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .mytime h2 {
+  margin: 24px auto 28px;
+  padding-left: 20px;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.calender .mytime .time {
+  display: flex;
+  margin: 16px auto 16px;
+  justify-content: space-between;
+  width: 360px;
+  height: 100px;
+  font: 700 40px/100px normal;
+  text-align: center;
+}
+
+.calender .mytime .time li {
+  display: block;
+  width: 70px;
+  height: 100px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.calender .mytime .time li:first-child {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.calender .mytime .unit {
   display: flex;
   margin: auto;
-  width: 1152px;
+  justify-content: space-between;
+  width: 360px;
+  height: 100px;
+  font: 700 30px/48px normal;
+  color: #B1768E;
+  text-align: center;
 }
 
-/* header */
-.header {
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-/* logo */
-.header .logo {
+.calender .mytime .unit li {
   display: block;
-  margin: 15px 60px 15px 0;
-  width: 100px;
-  height: 50px;
-  background: transparent url(../images/logo.png) no-repeat center/contain;
-  font-size: 0;
+  width: 70px;
+  height: 48px;
 }
 
-/* manu */
-.header .manu {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+.calender .mytime .unit li:first-child {
+  width: 80px;
+  margin-right: 20px;
 }
 
-.header .manu li {
-  display: block;
-  margin-right: 31px;
-  padding: 0 7px;
-  height: 40px;
-  line-height: 40px;
-}
-
-.header .manu .select {
-  border-bottom: 2px solid #B1768E;
-}
-
-.header .manu li:hover {
-  border-bottom: 2px solid #B1768E;
-}
-
-/* search */
-.header .search {
-  display: flex;
-  margin: 20px 18px 20px 0;
-  width: 416px;
-  height: 40px;
-  background: #E9E9E9;
-  border-radius: 20px;
-}
-
-.header .search input {
-  flex: 1;
-  padding-left: 10px;
-  background: #E9E9E9;
-  border-radius: 20px;
-  border: 0;
-  outline: none;
-}
-
-.header .search input::placeholder {
-  color: #999;
-}
-
-.header .search a {
-  width: 24px;
-  height: 24px;
-  margin: 8px 12px 8px 0;
-  background-image: url(../images/search.png);
-}
-
-/* user */
-.header .user a {
-  display: flex;
-  margin: 20px 0 20px 0;
-}
-
-.header .user img {
-  margin-right: 18px;
-  border-radius: 20px;
-}
-
-.header .user span {
-  display: block;
-  padding: 12px 0 12px 0;
-  font-size: 16px;
-  line-height: 16px;
-  color: #5C5C5C;
-}
 
 /* banner */
 .banner .wrapper {

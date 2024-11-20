@@ -1,0 +1,115 @@
+.register {
+  display: block;
+  margin-top: 120px;
+}
+.register .nav {
+  display: flex;
+}
+.register .nav img {
+  display: block;
+}
+.register .nav span {
+  display: block;
+  margin-left: 10px;
+  width: 96px;
+  height: 24px;
+  font-family: Inknut Antiqua, Inknut Antiqua;
+  font-weight: 400;
+  font-size: 24px;
+  color: #5C5C5C;
+  line-height: 24px;
+}
+.register form {
+  margin: 60px auto;
+  width: 550px;
+  height: 500px;
+}
+.register form i {
+  margin: 4px 0 10px 150px;
+  display: block;
+  height: 20px;
+  color: red;
+  font: 400 16px/16px normal;
+}
+.register form span {
+  display: inline-block;
+  padding-right: 20px;
+  width: 150px;
+  height: 42px;
+  font-size: 18px;
+  color: #000000;
+  line-height: 42px;
+  text-align: right;
+}
+.register form input[type='text'],
+.register form input[type='password'] {
+  width: 400px;
+  height: 42px;
+  padding: 4px 10px;
+  font-size: 16px;
+  border: 1px solid #97556F;
+}
+.register form input[type='text'] ::placeholder,
+.register form input[type='password'] ::placeholder {
+  color: #adaeb0;
+}
+.register form input[type="checkbox"] {
+  margin-top: 10px;
+  display: none;
+  /* 隐藏默认复选框 */
+}
+.register form input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  /* 为复选框留出空间 */
+  cursor: pointer;
+}
+.register form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  /* 设置为圆角方框 */
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.register form input[type="checkbox"]:checked + label::before {
+  background-color: #97556F;
+  /* 选中时背景色 */
+  border-color: #97556F;
+  /* 选中时边框色 */
+}
+.register form input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  /* 选中时添加对号 */
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-size: 16px;
+  color: white;
+}
+.register form p {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 18px;
+  font-style: normal;
+}
+.register form input[type='submit'] {
+  display: block;
+  justify-self: center;
+  margin-top: 30px;
+  padding: 0;
+  width: 214px;
+  height: 40px;
+  background: #BF8FA2;
+  border: transparent;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 21px;
+}

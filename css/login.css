@@ -1,0 +1,128 @@
+.logo {
+  margin: 80px 0 20px 0;
+}
+@keyframes identifier {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bac {
+  width: 100%;
+  height: 450px;
+  background: #CBA5B4;
+}
+.bac .login {
+  display: flex;
+  justify-content: space-between;
+}
+.bac .login .round {
+  margin: 27px 0;
+  width: 396px;
+  height: 396px;
+  border-radius: 198px;
+  box-shadow: 8px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.bac .login .round img {
+  animation: identifier linear 6s infinite;
+}
+.bac .login .box {
+  margin: 45px 0;
+  width: 600px;
+  height: 360px;
+  background: #FFFFFF;
+  box-shadow: 8px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.bac .login .box h2 {
+  display: block;
+  font-family: Inknut Antiqua, Inknut Antiqua;
+  font-weight: bold;
+  font-size: 32px;
+  color: #97556F;
+  line-height: 90px;
+  letter-spacing: 32px;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+.bac .login .box form {
+  padding: 0 60px;
+  font-family: Inknut Antiqua, Inknut Antiqua;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+.bac .login .box form input[name='uname'],
+.bac .login .box form input[name='key'] {
+  margin-left: 42px;
+  margin-bottom: 24px;
+  padding: 4px 10px;
+  font-size: 16px;
+  width: 400px;
+  height: 42px;
+  background: #F2F2F2;
+  border: 1px solid #97556F;
+}
+.bac .login .box form input::placeholder {
+  font-size: 16px;
+  color: #ADAEB0;
+}
+.bac .login .box form input[type="checkbox"] {
+  margin-top: 10px;
+  display: none;
+  /* 隐藏默认复选框 */
+}
+.bac .login .box form input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  /* 为复选框留出空间 */
+  cursor: pointer;
+}
+.bac .login .box form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  /* 设置为圆角方框 */
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.bac .login .box form input[type="checkbox"]:checked + label::before {
+  background-color: #97556F;
+  /* 选中时背景色 */
+  border-color: #97556F;
+  /* 选中时边框色 */
+}
+.bac .login .box form input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  /* 选中时添加对号 */
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-size: 16px;
+  color: white;
+}
+.bac .login .box form input[type='submit'] {
+  margin: 10px auto;
+  padding: 0;
+  width: 478px;
+  height: 40px;
+  background: #BF8FA2;
+  border: transparent;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 21px;
+  text-align: center;
+}
+.bac .login .box form .add {
+  display: flex;
+  justify-content: space-between;
+}

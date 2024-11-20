@@ -1,22 +1,22 @@
 /* 基础公共样式：清除默认样式 + 设置通用样式 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  /* 设置body主体文字样式及颜色 */
-  body {
-    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
-    color: #333;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* 去除超链接下划线，设置超链接字体颜色 */
-  a {
-    color: #333;
-    text-decoration: none;
-  }
+li {
+  list-style: none;
+}
+
+/* 设置body主体文字样式及颜色 */
+body {
+  font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+}
+
+/* 去除超链接下划线，设置超链接字体颜色 */
+a {
+  color: #333;
+  text-decoration: none;
+}
